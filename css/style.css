@@ -84,3 +84,49 @@ a.active{
 a.active::after{
     width: 100%;
 }
+.Presentation{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 5rem;
+text-align: center;
+margin: 10rem 2rem;
+}
+
+.Presentation img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid var(--Violet-doux);
+
+}
+.Presentation h1 {
+    color: var(--violet-fonce);
+    font-weight: 1.3em;
+    margin-bottom: 1.2rem;
+}
+.Presentation p{
+    color: var(--gris-fonce);
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+
+}
+.Presentation a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--Violet-doux);
+    color:white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease,transform 0.2s;
+
+}
+.Presentation a:hover {
+    background-color: var(--violet-fonce);
+    transform: translateY(-3px);
+}
