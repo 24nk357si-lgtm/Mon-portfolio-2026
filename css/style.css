@@ -150,12 +150,85 @@ section h2::after {
     display: block;
     width: 60px;
     height: 4px;
-    background-color: var(--Violet-doux);
+    background-color: var(--Violet-doux); 
     margin: 1.2rem auto ;
     border-radius: 2px;
 }
+
+.apropos p {
+    margin-bottom: 2rem;
+    color: var(--gris-fonce);
+    font-size: 2px;
+}
+
 .apropos p {
     margin-bottom: 2rem;
     color: var(--gris-fonce);
     font-size: 1.3rem;
+}
+
+.competences table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 2px 6px 10px  rgba(0, 0, 0, 0.05);
+    border-radius:10px;
+    overflow: hidden;
+}
+
+.competences table th,.comptence table td {
+    padding: 15px;
+}
+
+.competences table thead{
+    background-color: var(--Violet-doux);
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.competences table tbody td{
+    border-bottom: 1px solid var(--gris-clair);
+    color: var(--gris-fonce);
+    text-align: left;
+}
+
+.competences table tbody tr:nth-child(even) {
+    background-color: #fdfdfd;
+}
+
+.competences table tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+.competences table tbody tr:hover {
+    background-color: var(--gris-tres-claire);
+}
+
+
+footer{
+    margin-top: 3rem;
+    background-color: #6C63FF;
+    padding: 3rem;
+    text-align: center;
+}
+
+footer p {
+color: white;
+margin-bottom: 1.2rem;
+}
+
+footer a {
+    display: inline-block;
+    font-size: 1.6rem;
+    color: white;
+    margin: 0 10px;
+    transition: color 0.3s ease, transform 0.2S ease;
+}
+
+footer a :hover {
+color: #FFA726;
+transform: translate(-3px);
 }
