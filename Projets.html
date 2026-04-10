@@ -3,86 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
+    <title>Mes Projets | LaDivine Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://ts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+<body> 
+
     <header>
-        <div>
-            <a href="">Mon Portfolio</a>
-            </div>
-            <nav>
-                <ul>
+        <div class="logo">
+            <a href="index.html">Mon Portfolio</a>
+        </div>
+        <nav>
+            <ul>
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="Projets.html"class="active">Projets</a></li>
+                <li><a href="Projets.html" class="active">Projets</a></li>
                 <li><a href="passion.html">Passions</a></li>
                 <li><a href="Divertissement.html">Divertissement</a></li>
                 <li><a href="Contact.html">Contact</a></li>
             </ul>
-            </nav>
+        </nav>
     </header>
+
     <main>
-        <h1>Voici Mes projets</h1>
-         <h2>Mes realisations</h2>
-        <div class="container">
-            <article class="Card">
-                <img src="Image/Site E-commerce.jpg" alt="Site e-commerce">
-                <h3>Site E-commerce </h3>
-                <p>une boutique en ligne développée avec HTML,CSS, et JavaScript.</p>
-                <a href="#">Code</a>
-                <a href="#">Démo</a>
-            <article class="Card">
-                <img src="Image/Gestionnaire de taches.jpg" alt="Gestionnaire de taches">
-                <h3>Gestionnaire de taches</h3>
-                <p>Application pour organiser les projets quotidiens.</p>
-                <a href="#">Code</a>
-                <a href="#">Démo</a>
+        <section class="projets-section">
+            <div class="intro">
+                <h1>Voici Mes Projets</h1>
+                <p>Découvrez mes réalisations techniques et créatives.</p>
+            </div>
+
+            <div class="container">
                 <article class="Card">
-                    <img src="Image/Blog Personnel.jpg" alt="Blog Personnel">
-                    <h3>Blog Personnel</h3>
-                    <p>Projets en cours avec Laravel.</p>
-                    <a href="#">Code</a>
-                    <a href="#">Démo</a>
-                    <article class="Card">
-                        <img src="Image/Bashboard d'Annalyse.jpg" alt="Bashboard'Annalyse">
-                        <h3>Bashboard d'Annalyse</h3>
-                        <p>Visualisation de données dynamique avec Python et la bibliotheque Matplotlib</p>
-                        <a href="#">Code</a>
-                        <a href="#">Démo</a>
-                        <article class="Card">
-                            <img src="Image/Application Météo.jpg" alt="Application Météo">
-                            <h3>Application Météo</h3>
-                            <p>Une application utilisant une API en temps réel pour afficher la météo mondiale.</p>
-                            <a href="#">Code</a>
-                            <a href="#">Démo</a>
-                            <article class="Card">
-                                <img src="Image/Maquette Mobile Ul.jpg" alt="Maquette Mobile UI">
-                                <H3>Maquette Mobile UI</H3>
-                                <P> Conception d'une interface utilisateur moderne pour une application de fitness.</P>
-                                <a href="Code"></a>
-                                <a href="Démo"></a>
+                    <div class="card-image">
+                        <img src="Image/Site E-commerce.jpg" alt="Site e-commerce">
+                    </div>
+                    <div class="card-content">
+                        <h3>Site E-commerce</h3>
+                        <p>Une boutique en ligne développée avec HTML, CSS, et JavaScript.</p>
+                        <div class="card-links">
+                            <a href="#" class="btn-code"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="btn-demo"><i class="fas fa-external-link-alt"></i> Démo</a>
+                        </div>
+                    </div>
+                </article>
 
-                            </article>
+                <article class="Card">
+                    <div class="card-image">
+                        <img src="Image/Gestionnaire de taches.jpg" alt="Gestionnaire de tâches">
+                    </div>
+                    <div class="card-content">
+                        <h3>Gestionnaire de tâches</h3>
+                        <p>Application pour organiser les projets quotidiens.</p>
+                        <div class="card-links">
+                            <a href="#" class="btn-code"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="btn-demo"><i class="fas fa-external-link-alt"></i> Démo</a>
+                        </div>
+                    </div>
+                </article>
 
-                         </div>
+                <article class="Card">
+                    <div class="card-image">
+                        <img src="Image/Blog Personnel.jpg" alt="Blog Personnel">
+                    </div>
+                    <div class="card-content">
+                        <h3>Blog Personnel</h3>
+                        <p>Projets en cours avec Laravel et base de données MySQL.</p>
+                        <div class="card-links">
+                            <a href="#" class="btn-code"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="btn-demo"><i class="fas fa-external-link-alt"></i> Démo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="Card">
+                    <div class="card-image">
+                        <img src="Image/Bashboard d'Annalyse.jpg" alt="Dashboard d'Analyse">
+                    </div>
+                    <div class="card-content">
+                        <h3>Dashboard d'Analyse</h3>
+                        <p>Visualisation de données dynamique avec Python et Matplotlib.</p>
+                        <div class="card-links">
+                            <a href="#" class="btn-code"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="btn-demo"><i class="fas fa-external-link-alt"></i> Démo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="Card">
+                    <div class="card-image">
+                        <img src="Image/Application Météo.jpg" alt="Application Météo">
+                    </div>
+                    <div class="card-content">
+                        <h3>Application Météo</h3>
+                        <p>Utilisation d'une API en temps réel pour la météo mondiale.</p>
+                        <div class="card-links">
+                            <a href="#" class="btn-code"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="btn-demo"><i class="fas fa-external-link-alt"></i> Démo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="Card">
+                    <div class="card-image">
+                        <img src="Image/Maquette Mobile Ul.jpg" alt="Maquette Mobile UI">
+                    </div>
+                    <div class="card-content">
+                        <h3>Maquette Mobile UI</h3>
+                        <p>Conception d'une interface utilisateur moderne pour le fitness.</p>
+                        <div class="card-links">
+                            <a href="#" class="btn-code"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="btn-demo"><i class="fas fa-external-link-alt"></i> Démo</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
     </main>
+
     <footer>
-        <p>© 2026 LaDivine. Tous droits réservés.</p>
-        <div>
-            <a href="">
-             <img src="C:\Users\Ladivine\Desktop\Mon-portfolio-2026-main\Image\Twitter.jpg" alt="x" width="50">
-            </a>
-            <a href="">
-                <img src="C:\Users\Ladivine\Desktop\Mon-portfolio-2026-main\Image\Linkedin.jpg" alt="Linkedin" width="50">
-            </a>
-            <a href="">
-                <img src="C:\Users\Ladivine\Desktop\Mon-portfolio-2026-main\Image\Github.jpg" alt="Github" width="50">
-            </a>
+        <p>&copy; 2026 LaDivine. Tous droits réservés.</p>
+        <div class="social-footer">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
         </div>
     </footer>
 
 </body>
 </html>
-       
